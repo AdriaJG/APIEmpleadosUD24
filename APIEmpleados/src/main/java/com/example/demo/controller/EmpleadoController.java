@@ -68,9 +68,7 @@ public class EmpleadoController {
 		empleadoSeleccionado = empleadoServiceImpl.buscaEmpleado(id);
 		empleadoSeleccionado.setNombre(empelado.getNombre());
 		empleadoSeleccionado.setTrabajo(empelado.getTrabajo());
-		empleadoActualizado = empleadoServiceImpl.actualizarEmpleado(empleadoSeleccionado);
-		
-		return empleadoActualizado;
+		return empleadoActualizado = empleadoServiceImpl.actualizarEmpleado(empleadoSeleccionado);
 		
 	}
 	
